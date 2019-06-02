@@ -4,6 +4,12 @@ spring:
   application:
     name: msa
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh"
+
 ---
 spring:
   profiles: dev
